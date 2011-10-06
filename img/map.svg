@@ -467,7 +467,7 @@ Created for Diplomap (http://www.games2relax.net/diplomap/)
 </defs>
 
 <g title="units" ng:repeat="unit in units">
-    <use xlink:href="#A" class="{{unit.nation}}" x="{{unit.x}}" y="{{unit.y}}" ng:click="clickUnit(unit)" />
+    <use xlink:href="#A" class="{{unit.nation}}" x="{{unit.x}}" y="{{unit.y}}" ng:drag="dragUnit(unit)" ng:drop="dropUnit(unit)" />
 </g>
 
 <g title="stars" ng:repeat="star in stars">
